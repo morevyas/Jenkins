@@ -4,29 +4,7 @@
 ---
 
 <h1 id="jenkins">Jenkins</h1>
-<h1 id="using-jenkins">Using Jenkins<a href="https://www.jenkins.io/doc/book/using/#using-jenkins"></a></h1>
-<p>Chapter Sub-Sections</p>
-<ul>
-<li><a href="https://www.jenkins.io/doc/book/using/best-practices">Best Practices</a></li>
-<li><a href="https://www.jenkins.io/doc/book/using/working-with-projects">Working with projects</a></li>
-<li><a href="https://www.jenkins.io/doc/book/using/using-credentials">Using credentials</a></li>
-<li><a href="https://www.jenkins.io/doc/book/using/searchbox">Command Palette</a></li>
-<li><a href="https://www.jenkins.io/doc/book/using/referencing-another-project-by-name">Referencing another project by name</a></li>
-<li><a href="https://www.jenkins.io/doc/book/using/aborting-a-build">Aborting a build</a></li>
-<li><a href="https://www.jenkins.io/doc/book/using/fingerprints">Fingerprints</a></li>
-<li><a href="https://www.jenkins.io/doc/book/using/using-local-language">Using local language</a></li>
-<li><a href="https://www.jenkins.io/doc/book/using/change-time-zone">Change time zone</a></li>
-<li><a href="https://www.jenkins.io/doc/book/using/remote-access-api">Remote Access API</a></li>
-<li><a href="https://www.jenkins.io/doc/book/using/executor-starvation">Executor Starvation</a></li>
-<li><a href="https://www.jenkins.io/doc/book/using/using-agents">Using Jenkins agents</a></li>
-<li><a href="https://www.jenkins.io/doc/book/using/using-jmeter-with-jenkins">Using JMeter with Jenkins</a></li>
-<li><a href="https://www.jenkins.io/doc/book/using/pluggable-storage">Pluggable Storage</a></li>
-</ul>
-<p>This chapter contains topics for typical Jenkins users (of all skill levels) about Jenkins Pipeline.</p>
-<p>If you want to create and configure a Pipeline project through a  <code>Jenkinsfile</code>  or you wish to find out more about this core Jenkins feature, refer to the relevant topics within the  <a href="https://www.jenkins.io/doc/book/pipeline">Pipeline</a>  chapter.</p>
-<p>If you are a Jenkins administrator and want to know more about managing Jenkins nodes and instances, see  <a href="https://www.jenkins.io/doc/book/managing">Managing Jenkins</a>.</p>
-<p>If you are a system administrator and want to learn how to back-up, restore, maintain as Jenkins servers and nodes, see  <a href="https://www.jenkins.io/doc/book/system-administration">Jenkins System Administration</a>.</p>
-<p>If you are a Jenkins user looking for some troubleshooting tips, see  <a href="https://www.jenkins.io/doc/book/troubleshooting">Troubleshooting Jenkins</a></p>
+<h1 id="using-jenkins">Using Jenkins</h1>
 <h2 id="jenkins-architecture">Jenkins Architecture</h2>
 <p>Jenkins follows a <strong>controller-agent architecture</strong>. The Jenkins Controller manages the CI/CD process, while Agents execute the actual build, test, and deployment tasks.</p>
 <h3 id="basic-architecture">1) Basic Architecture</h3>
@@ -75,7 +53,7 @@
 <li>Managing users and permissions</li>
 <li>Managing credentials</li>
 <li>Managing plugins</li>
-<li>Reading Jenkinsfiles</li>
+<li>Reading Jenkinfiles</li>
 <li>Maintaining build history</li>
 <li>Assigning work to agents</li>
 <li>Providing the Jenkins web interface</li>
@@ -123,4 +101,8 @@ Jenkins Agent
          ▼
   Spring Boot App
 </code></pre>
+<h2 id="why-is-jenkins-used.">Why is jenkins used.</h2>
+<p>Jenkins is used to <strong>automate the software development and delivery process</strong>. It helps DevOps teams automatically take source code from a repository, build it, test it, package it, create Docker images, and deploy the application.</p>
+<p>Jenkins reduces manual work by automatically executing the steps required to build, test, and deliver an application.</p>
+<p><strong>Jenkins is used to automate, standardize, and monitor the process of converting source code into a tested and deployable application.</strong></p>
 
