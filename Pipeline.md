@@ -57,4 +57,16 @@ post {
 }
 }
 </code></pre>
+<h2 id="why-pipeline">Why Pipeline</h2>
+<p><strong>Pipeline:</strong> Jenkins manages the <strong>entire software delivery workflow as code</strong>.</p>
+<p>Jenkins Pipeline is important because it <strong>automates the entire software delivery process</strong>—from getting code from GitHub to testing, building, and deploying the application.</p>
+<pre><code>Developer → GitHub → Jenkins Pipeline → Build → Test → Docker → Deploy
+</code></pre>
+<ul>
+<li><strong>Code:</strong> A Pipeline is written as code, usually in a <code>Jenkinsfile</code>, and stored in a source-code repository such as GitHub. This means the pipeline can be reviewed, modified, and version-controlled just like application code.</li>
+<li><strong>Durable:</strong> A Pipeline can continue working even if the Jenkins controller is restarted, whether the restart is planned or caused by an unexpected issue.</li>
+<li><strong>Pausable:</strong> A Pipeline can pause when human approval is required. For example, Jenkins can build and test an application automatically but wait for someone to approve it before deploying to production.</li>
+<li><strong>Versatile:</strong> Pipelines can handle complex CI/CD workflows. Tasks can run sequentially, in parallel, or conditionally. You can also use loops, branches, and other logic when needed.</li>
+<li><strong>Extensible:</strong> Jenkins Pipeline can be extended using plugins and custom Pipeline functionality. This allows Jenkins to integrate with tools such as GitHub, Docker, Maven, SonarQube, AWS, Kubernetes, and many others.</li>
+</ul>
 
