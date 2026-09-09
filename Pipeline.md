@@ -69,4 +69,43 @@ post {
 <li><strong>Versatile:</strong> Pipelines can handle complex CI/CD workflows. Tasks can run sequentially, in parallel, or conditionally. You can also use loops, branches, and other logic when needed.</li>
 <li><strong>Extensible:</strong> Jenkins Pipeline can be extended using plugins and custom Pipeline functionality. This allows Jenkins to integrate with tools such as GitHub, Docker, Maven, SonarQube, AWS, Kubernetes, and many others.</li>
 </ul>
+<h2 id="pipeline-meaning--">Pipeline meaning :-</h2>
+<ul>
+<li>
+<p><strong>Developer writes code</strong> – The developer creates or modifies the application source code.</p>
+</li>
+<li>
+<p><strong>Commit and Push</strong> – The developer commits the changes and pushes them to a Git repository such as GitHub, GitLab, or Bitbucket.</p>
+</li>
+<li>
+<p><strong>Jenkins detects the change</strong> – Jenkins detects the new code using a <strong>webhook</strong> or <strong>polling</strong>.</p>
+</li>
+<li>
+<p><strong>Pipeline starts</strong> – After detecting the change, Jenkins starts the pipeline according to the instructions written in the <strong>Jenkinsfile</strong>.</p>
+</li>
+<li>
+<p><strong>Checkout Stage</strong> – Jenkins downloads the latest source code from the Git repository into the workspace of a Jenkins Agent.</p>
+</li>
+<li>
+<p><strong>Build Stage</strong> – Jenkins builds or prepares the application. Depending on the technology, it may compile the code, install dependencies, create packages, or build a Docker image.</p>
+</li>
+<li>
+<p><strong>Build validation</strong> – If the build fails, Jenkins stops the pipeline and reports the error. If the build succeeds, it moves to testing.</p>
+</li>
+<li>
+<p><strong>Test Stage</strong> – Jenkins runs automated tests such as <strong>unit tests, integration tests, API tests, and security checks</strong> to verify that the application works correctly.</p>
+</li>
+<li>
+<p><strong>Test result</strong> – If the tests fail, Jenkins stops the pipeline so that faulty code is not deployed. If all tests pass, Jenkins continues to deployment.</p>
+</li>
+<li>
+<p><strong>Deploy Stage</strong> – Jenkins deploys the successfully built and tested application to an environment such as <strong>development, staging, or production</strong>.</p>
+</li>
+<li>
+<p><strong>Application runs</strong> – After successful deployment, the application becomes available in the target environment for users or further testing.</p>
+</li>
+<li>
+<p><strong>Notification</strong> – Jenkins can notify developers about the pipeline result, such as <strong>Build Successful</strong> or <strong>Build Failed</strong>.</p>
+</li>
+</ul>
 
