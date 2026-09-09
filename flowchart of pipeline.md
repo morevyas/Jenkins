@@ -62,12 +62,12 @@ Jenkins Agent / Worker
 │
 ├── 7. Push Image
 │
-└── 8. Deploy
+└── 8. Deploy the app.
         │
         ▼
    Server / AWS / Kubernetes
 </code></pre>
-<h3 id="some-points--">some points :-</h3>
+<h3 id="some-points--about-flowchart--">some points  about flowchart :-</h3>
 <ul>
 <li>
 <p><strong>Developer writes code</strong> – The developer creates or modifies the application source code.</p>
