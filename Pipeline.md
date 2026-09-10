@@ -70,6 +70,7 @@ post {
 <li><strong>Extensible:</strong> Jenkins Pipeline can be extended using plugins and custom Pipeline functionality. This allows Jenkins to integrate with tools such as GitHub, Docker, Maven, SonarQube, AWS, Kubernetes, and many others.</li>
 </ul>
 <h2 id="pipeline-meaning--">Pipeline meaning :-</h2>
+<p>complete explain.</p>
 <ul>
 <li>
 <p><strong>Developer writes code</strong> – The developer creates or modifies the application source code.</p>
