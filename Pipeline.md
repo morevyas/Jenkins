@@ -109,4 +109,33 @@ post {
 <p><strong>Notification</strong> – Jenkins can notify developers about the pipeline result, such as <strong>Build Successful</strong> or <strong>Build Failed</strong>.</p>
 </li>
 </ul>
+<h3 id="understanding-the-pipeline-structure-">Understanding the pipeline structure :</h3>
+<pre><code>pipeline {
+
+agent
+
+environment
+
+options
+
+parameters
+
+triggers
+
+tools
+
+stages {
+
+    stage('Stage Name') {
+        steps {
+            // commands
+        }
+    }
+}
+
+post {
+    // actions after pipeline
+}
+}
+</code></pre>
 
