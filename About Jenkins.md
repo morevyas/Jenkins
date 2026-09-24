@@ -105,4 +105,53 @@ Jenkins Agent
 <p>Jenkins is used to <strong>automate the software development and delivery process</strong>. It helps DevOps teams automatically take source code from a repository, build it, test it, package it, create Docker images, and deploy the application.</p>
 <p>Jenkins reduces manual work by automatically executing the steps required to build, test, and deliver an application.</p>
 <p><strong>Jenkins is used to automate, standardize, and monitor the process of converting source code into a tested and deployable application.</strong></p>
+<h2 id="basic-pipeline-structure---">Basic Pipeline Structure : -</h2>
+<pre><code>	pipeline {
+agent any
+
+stages {
+
+    stage('Hello') {
+        steps {
+            echo 'Hello from Jenkins!'
+        }
+    }
+
+    stage('Build') {
+        steps {
+            sh '''
+                echo "Building the application..."
+                echo "Build completed successfully!"
+            '''
+        }
+    }
+
+    stage('Test') {
+        steps {
+            sh '''
+                echo "Running tests..."
+                echo "Tests passed!"
+            '''
+        }
+    }
+
+    stage('Deploy') {
+        steps {
+            echo 'Deploying application...'
+        }
+    }
+}
+
+post {
+    success {
+        echo 'Jenkins Pipeline completed successfully!'
+    }
+
+    failure {
+        echo 'Jenkins Pipeline failed!'
+    }
+}
+}
+</code></pre>
+<p>.</p>
 
