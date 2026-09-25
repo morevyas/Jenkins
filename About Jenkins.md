@@ -46,6 +46,27 @@
               │ Server    │
               └───────────┘
 </code></pre>
+<h3 id="a-basic-workflow">A basic workflow</h3>
+<pre><code>Developer
+   ↓
+GitHub
+   ↓
+Jenkins Pipeline
+   ↓
+Checkout Code
+   ↓
+Install Dependencies
+   ↓
+Run Tests
+   ↓
+Build Docker Image
+   ↓
+Stop/Update Application
+   ↓
+Run Docker Container
+   ↓
+Application Live
+</code></pre>
 <h3 id="jenkins-controller">2) Jenkins Controller</h3>
 <ul>
 <li>Managing Jenkins jobs and pipelines</li>
