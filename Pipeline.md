@@ -9,6 +9,27 @@
 <p>A <em>continuous delivery (CD) pipeline</em> is an automated expression of your process for getting software from version control right through to your users and customers. Every change to your software (committed in source control) goes through a complex process on its way to being released. This process involves building the software in a reliable and repeatable manner, as well as progressing the built software (called a “build”) through multiple stages of testing and deployment.</p>
 <p>The definition of a Jenkins Pipeline is written into a text file (called a <a href="https://www.jenkins.io/doc/book/pipeline/jenkinsfile"><code>Jenkinsfile</code></a>) which in turn can be committed to a project’s source control repository.<br>
 This is the foundation of “Pipeline-as-code”; treating the CD pipeline as a part of the application to be versioned and reviewed like any other code.</p>
+<h2 id="simple-workflow-">Simple workflow :</h2>
+<pre><code>Developer
+   ↓
+GitHub
+   ↓
+Jenkins Pipeline
+	 ↓	
+Checkout Code
+	 ↓
+Install Dependencies
+   ↓
+Run Tests
+   ↓
+Build Docker Image
+   ↓
+Stop/Update Application
+   ↓
+Run Docker Container
+   ↓
+Application Live
+</code></pre>
 <h3 id="a-simple-file---">A Simple file : -</h3>
 <h3 id="jenkinsfile">Jenkinsfile</h3>
 <pre><code>pipeline {
@@ -139,5 +160,14 @@ post {
 }
 }
 </code></pre>
-<p>.</p>
+<h2 id="some-points-">Some points :</h2>
+<ul>
+<li><strong>Automation</strong> — reduces manual work</li>
+<li><strong>CI/CD</strong> — continuous integration and delivery/deployment</li>
+<li><strong>Consistency</strong> — same deployment process every time</li>
+<li><strong>Fast feedback</strong> — failures are detected quickly</li>
+<li><strong>Version control</strong> — Jenkinsfile can be stored in GitHub</li>
+<li><strong>Easy deployment</strong> — deploy to servers automatically</li>
+<li><strong>Logs</strong> — Jenkins keeps the output of every stage.</li>
+</ul>
 
