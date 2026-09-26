@@ -174,5 +174,47 @@ post {
 }
 }
 </code></pre>
-<p>.</p>
+<h2 id="cicd-workflow-">CI/CD Workflow :</h2>
+<pre><code>                       Developer
+                       │
+                       │ git push
+                       ↓
+                    GitHub
+                       │
+                       │ Webhook
+                       ↓
+                Jenkins Controller
+                       │
+                       ↓
+                Jenkins Pipeline
+                       │
+    ┌──────────────────┴──────────────────┐
+    │                                     │
+    ↓                                     │
+   1. Checkout                                │
+    ↓                                     │
+   2. Build                                   │
+    ↓                                     │
+   3. Unit Test                               │
+    ↓                                     │
+   4. Test Report                             │
+    ↓                                     │
+   5. Code Quality                            │
+    ↓                                     │
+   6. Docker Build                            │
+    ↓                                     │
+   7. Docker Push                             │
+    ↓                                     │
+   8. Deployment Approval                     │
+    ↓                                     │
+   9. Docker Swarm                            │
+    ↓                                     │
+   10. Verification                           │
+    ↓                                     │
+   Application Running                        │
+    │                                     │
+    └──────────────→ Monitoring ←─────────┘
+                       │
+                Prometheus + Grafana
+</code></pre>
 
