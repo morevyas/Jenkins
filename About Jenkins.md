@@ -6,7 +6,7 @@
 <h1 id="jenkins">Jenkins</h1>
 <h1 id="using-jenkins">Using Jenkins</h1>
 <h2 id="jenkins-architecture">Jenkins Architecture</h2>
-<p>Jenkins follows a <strong>controller-agent architecture</strong>. The Jenkins Controller manages the CI/CD process, while Agents execute the actual build, test, and deployment tasks.</p>
+<p>Jenkins follows a <strong>controller-agent architecture</strong>. The Jenkins Controller manages the <strong>CI/CD</strong> process, while Agents execute the actual build, test, and deployment tasks.</p>
 <h3 id="basic-architecture">1) Basic Architecture</h3>
 <pre><code>                Developer
                     │
@@ -215,6 +215,6 @@ post {
     │                                     │
     └──────────────→ Monitoring ←─────────┘
                        │
-                Prometheus + Grafana
+                Prometheus + Grafana-server
 </code></pre>
 
