@@ -32,7 +32,7 @@ agent any
 }
 }
 </code></pre>
-<h2 id="jenkins-pipeline-flow">jenkins pipeline flow</h2>
+<h2 id="jenkins-pipeline-flow">Jenkins pipeline flow</h2>
 <pre><code>Developer
 │
 │  git push
